@@ -1,0 +1,10 @@
+Package: 软件包名
+Version: 版本号
+Maintainer: 你 <你的邮箱>
+Section: utils
+Source: 源代码名称，非必须，可以删去
+Homepage: 软件官网主页
+Architecture: amd64
+Priority: optional
+Depends: libc6 (>= 2.14)
+Description: 这里写的软件包介绍会出现在双击安装时

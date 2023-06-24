@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# 桌面方面
+update-icon-caches /usr/share/icons/hicolor || true
+update-desktop-database /usr/share/applications || true
+update-mime-database /usr/share/mime || true
+
+# postinst脚本将会在软件安装结束后运行
+
+# 以上为刷新图标缓存，桌面数据库和mime类型数据库，防止安装后desktop文件不出现在软件列表/没有图标
+
+# 如果需要把可执行文件软链接到/usr/bin,请修改以下命令并删除前面的#
+#ln -s -f /opt/包名/可执行文件 /usr/local/bin/可执行文件名

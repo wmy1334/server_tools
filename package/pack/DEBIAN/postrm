@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# 桌面方面
+update-icon-caches /usr/share/icons/hicolor || true
+update-desktop-database /usr/share/applications || true
+update-mime-database /usr/share/mime || true
+
+# 再刷新一遍数据库防止残留
+# postrm脚本将会在软件卸载后运行
+
+#如果你在postinst文件中指定了软链接，请修改以下命令并删除前方的#
+# rm /usr/local/bin/可执行文件名
